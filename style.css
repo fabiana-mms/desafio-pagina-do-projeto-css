@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: #ffffff;
+}
+
+/* Estilo Cabecalho */
+.cabecalho {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-decoration: none;
+   background: #A51519;
+   padding: 15px 25px;
+}
+
+.cabecalho__lista {
+   display: flex;
+   gap: 20px;
+}
+
+.cabecalho__lista li {
+   list-style: none;
+   font-size: 12px;
+}
+
+.cabecalho__lista a {
+   font-family: 'Rubik Mono One', sans-serif;
+   text-decoration: none;
+}
+
+/* Estilo Conteudo */
+.container {
+   background: #2B2B2B;
+   padding: 100px;
+}
+
+.contato {
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   column-gap: 50px;
+}
+
+/* Estilo Coluna 01 */
+.contato-video-e-texto__container {
+   text-align: center;
+   width: 80%;
+}
+
+.contato-video-e-texto__titulo {
+   font-family: 'Rubik Mono One', sans-serif;
+   font-size: 22px;
+   margin-bottom: 40px;
+}
+
+.contato-video-e-texto__titulo-secundario {
+   font-family: 'Rubik', sans-serif;
+   font-size: 20px;
+   text-align: left;
+   margin: 40px 0 30px 0;
+}
+
+.contato-video-e-texto__texto {
+   font-family: 'Rubik', sans-serif;
+   text-align: left;
+}
+
+/* Estilo Coluna 02 */
+
+.contato-formulario {
+   background: #A51519;
+   font-family: 'Rubik', sans-serif;
+   width: 70%;
+   padding: 30px 20px;
+   border-radius: 8px;
+}
+
+.formulario__titulo-principal {
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.formulario__texto-principal {
+   text-align: center;
+   font-size: 15px;
+   margin-bottom: 30px;
+}
+
+.formulario__texto-secundario {
+   margin: 15px 0;
+}
+
+
+.formulario__container label {
+   font-family: 'Rubik', sans-serif;
+   padding-bottom: 20px;
+}
+
+.formulario__container input {
+   margin-bottom: 15px;
+}
+
+.formulario__container input {
+   padding: 3px;
+   margin-left: 5px;
+}
+
+.input-dados {
+   width: 70%;
+   background: #D9D9D9;
+   border: 1px solid #ffffff;
+}
+
+.input-dados::placeholder {
+   font-family: 'Rubik', sans-serif;
+   color: #2B2B2B;
+}
+
+.estilo-select select {
+   background: #D9D9D9;
+   font-family: 'Rubik', sans-serif;
+   font-size: 16px;
+   color: #2B2B2B;
+   padding: 5px;
+   margin: 20px 0 50px 0;
+   width: 100%;
+}
+
+.estilo-select option {
+   color: #2B2B2B;
+}
+
+.formulario__botao-container {
+   text-align: center;
+}
+
+.formulario__botao {
+   background: #D9D9D9;
+   border: 1px solid #ffffff;
+   border-radius: 3px;
+   font-family: 'Rubik', sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+   color: #2B2B2B;
+   text-align: center;
+   cursor: pointer;
+   padding: 10px;
+}
+
+/* Estilo Footer*/
+.rodape {
+   background: #A51519;
+   padding: 30px 0;
+   text-align: center;
+}
+
+.rodape__botao {
+   background: #A51519;
+   border: 1px solid #ffffff;
+   border-radius: 5px;
+   font-family: 'Rubik', sans-serif;
+   font-size: 18px;
+   padding: 10px 30px;
+   margin-bottom: 30px;
+}
+
+.rodape__lista {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+}
+
+.rodape__lista li {
+   list-style: none;
+   margin-bottom: 30px;
+}
+
+.rodape__texto {
+   font-family: 'Rubik', sans-serif;
+}
+
+@media screen and (max-width: 425px) {
+   .cabecalho {
+      width: 100%;
+      padding: 20px;
+   }
+
+   .container {
+      width: 100%;
+      text-align: center;
+      padding: 40px 30px;
+   }
+
+   .contato {
+      grid-template-columns: 1fr;
+      justify-items: start;
+   }
+
+   .contato-video-e-texto__container, .contato-formulario, .rodape {
+      width: 100%;
+   }
+
+   .contato-video-e-texto__container iframe {
+      width: 100%;
+      height: auto;
+   }
+
+   .contato-video-e-texto__titulo {
+      font-size: 18px;
+   }
+
+   .contato-video-e-texto__texto {
+      margin-bottom: 30px;
+   }
+
+   .formulario__container, .estilo-select {
+      text-align: left;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .cabecalho {
+      width: 100%;
+      padding: 20px;
+   }
+
+   .container {
+      width: 100%;
+      text-align: center;
+      padding: 40px 30px;
+   }
+
+   .contato {
+      column-gap: 20px;
+   }
+
+   .contato-video-e-texto__titulo {
+      font-size: 20px;
+   }
+
+   .contato-video-e-texto__container iframe {
+      width: 90%;
+      height: auto;
+   }
+
+   .contato-formulario {
+      width: 90%;
+   }
+
+   .formulario__container {
+      text-align: left;
+   }
+
+   .formulario__container label {
+      font-size: 14px;
+   }
+
+   .formulario__titulo-principal {
+      font-size: 18px;
+   }
+
+   .formulario__texto-principal {
+      font-size: 12px;
+   }
+
+   .estilo-select, .formulario__texto-secundario {
+      text-align: left;
+      font-size: 14px;
+   }
+  
+}

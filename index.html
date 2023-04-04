@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Contato</title>
+</head>
+
+<body>
+
+   <header class="cabecalho">
+      <a href="../index.html"><img class="cabecalho__logo" src="images/logo-site.png" alt="Logo do site escrito Hero"></a>
+      <nav class="cabecalho__navegacao">
+         <ul class="cabecalho__lista">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./marvel.html">Universo Marvel</a></li>
+            <li><a href="./dc.html">Universo DC</a></li>
+            <li><a href="./filmes.html">Filmes</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main class="container">
+
+      <div class="contato">
+
+         <section class="contato-video-e-texto">
+            <div class="contato-video-e-texto__container">
+               <h1 class="contato-video-e-texto__titulo">Universo Super Heróis</h1>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/zfZMxTsLDP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               <div class="contato-video-e-texto__textos">
+                  <h3 class="contato-video-e-texto__titulo-secundario">Quem somos?</h3>
+                  <p class="contato-video-e-texto__texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+               </div>
+            </div>
+         </section>
+
+         <section class="contato-formulario">
+            <form class="formulario" action="./contato.html">
+               <h2 class="formulario__titulo-principal">Receba indicações de filmes em seu e-mail</h2>
+               <p class="formulario__texto-principal">Preencha seus dados para receber as indicações</p>
+               <div class="formulario__container">
+                  <label for="nome">Nome:</label>
+                  <input class="input-dados" type="text" name="nome" id="nome" placeholder="Seu nome">
+               </div>
+               <div class="formulario__container">
+                  <label for="email">E-mail:</label>
+                  <input class="input-dados" type="email" name="email" id="email" placeholder="Seu e-mail">
+               </div>
+               <div class="formulario__container">
+                  <p class="formulario__texto-secundario">Qual universo de super heróis você mais gosta?</p>
+                  <input type="radio" name="marvel" id="marvel" value="Universo Marvel">
+                  <label for="marvel">Universo Marvel</label><br>
+                  <input type="radio" name="dc" id="dc" value="Universo DC">
+                  <label for="dc">Universo DC</label>
+               </div><br>
+               <div class="estilo-select">
+                  <label>Aceita receber mais informações sobre o Universo dos Super Heróis?</label><br>
+                  <select name="informacoes" id="informacoes">
+                     <option value="opcao">Selecione</option>
+                     <option value="sim">Sim</option>
+                     <option value="nao">Nao</option>
+                  </select>
+               </div>
+               <div class="formulario__botao-container">
+                  <button class="formulario__botao" type="submit">Receber indicações</button>
+               </div>
+            </form>
+         </section>
+
+      </div>
+   </main>
+
+   <footer class="rodape">
+      <button class="rodape__botao">Siga-nos</button>
+      <ul class="rodape__lista">
+         <li><a href="#"><img src="images/icon-google.png" alt="Icone do Google"></a></li>
+         <li><a href="#"><img src="images/icon-facebook.png" alt="Icone do Facebook"></a></li>
+         <li><a href="#"><img src="images/icon-twitter.png" alt="Icone do Twitter"></a></li>
+         <li><a href="#"><img src="images/icon-instagram.png" alt="Icone do Instagram"></a></li>
+         <li><a href="#"><img src="images/icon-youtube.png" alt="Icone do YouTube"></a></li>
+      </ul>
+      <p class="rodape__texto">© 2023 Universo Super Heróis</p>
+   </footer>
+</body>
+
+</html>
